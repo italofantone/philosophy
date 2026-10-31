@@ -1,0 +1,38 @@
+{
+    "name": "italofantone/philosophy",
+    "description": "A curated collection of philosophical quotes.",
+    "type": "library",
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^13.0",
+        "illuminate/console": "^13.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Italofantone\\Philosophy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Italofantone\\Philosophy\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Italo Morales Fantone",
+            "email": "hola@italofantone.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Italofantone\\Philosophy\\Providers\\PhilosophyServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^11.3",
+        "phpunit/phpunit": "^13.4"
+    }
+}

@@ -9,3 +9,11 @@ This component provides a curated collection of philosophical quotes, allowing d
 ```bash
 composer require italofantone/philosophy
 ```
+
+## Usage
+
+Display a random philosophical quote in your terminal:
+
+```bash
+php artisan philosophy
+```
