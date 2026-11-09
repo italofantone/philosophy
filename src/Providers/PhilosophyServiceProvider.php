@@ -2,6 +2,7 @@
 
 namespace Italofantone\Philosophy\Providers;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Italofantone\Philosophy\Commands\PhilosophyCommand;
 
@@ -19,5 +20,9 @@ class PhilosophyServiceProvider extends ServiceProvider
                 PhilosophyCommand::class,
             ]);
         }
+
+        Blade::directive('philosophy', function () {
+            return "<?php echo quote(); ?>";
+        });
     }
 }
