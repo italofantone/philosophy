@@ -17,3 +17,22 @@ Display a random philosophical quote in your terminal:
 ```bash
 php artisan philosophy
 ```
+
+### Blade Directive
+
+Display a random philosophical quote in your Blade templates:
+
+```blade
+@philosophy
+```
+
+### Functions
+
+The component provides the following helper function:
+
+- `quote()` or `philosophy()->quote()`: Retrieves a random philosophical quote.
+
+## Contact
+
+- **Email**: [hola@italofantone.com](mailto:hola@italofantone.com).
+- **LinkedIn**: [italofantone](https://linkedin.com/in/italofantone).
