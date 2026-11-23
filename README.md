@@ -36,6 +36,8 @@ The component provides the following helper function:
 
 - `quote()`, `quote('es')`: Retrieves a random philosophical quote in the specified language.
 
+> The supported languages are `en` and `es`. 
+
 ## Contact
 
 - **Email**: [hola@italofantone.com](mailto:hola@italofantone.com).
