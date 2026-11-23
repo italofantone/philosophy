@@ -25,9 +25,9 @@ php artisan philosophy --lang=es
 Display a random philosophical quote in your Blade templates:
 
 ```blade
-@philosophy
+@quote
 
-@philosophy('es')
+@quote('es')
 ```
 
 ### Functions
