@@ -21,8 +21,8 @@ class PhilosophyServiceProvider extends ServiceProvider
             ]);
         }
 
-        Blade::directive('philosophy', function () {
-            return "<?php echo quote(); ?>";
+        Blade::directive('quote', function ($lang) {
+            return "<?php echo quote({$lang}); ?>";
         });
     }
 }

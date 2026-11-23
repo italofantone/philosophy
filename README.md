@@ -16,6 +16,8 @@ Display a random philosophical quote in your terminal:
 
 ```bash
 php artisan philosophy
+
+php artisan philosophy --lang=es
 ```
 
 ### Blade Directive
@@ -24,13 +26,15 @@ Display a random philosophical quote in your Blade templates:
 
 ```blade
 @philosophy
+
+@philosophy('es')
 ```
 
 ### Functions
 
 The component provides the following helper function:
 
-- `quote()` or `philosophy()->quote()`: Retrieves a random philosophical quote.
+- `quote()`, `quote('es')`: Retrieves a random philosophical quote in the specified language.
 
 ## Contact
 

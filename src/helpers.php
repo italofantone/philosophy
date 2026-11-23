@@ -10,8 +10,8 @@ if (!function_exists('philosophy')) {
 }
 
 if (!function_exists('quote')) {
-    function quote(): string
+    function quote(?string $lang = null): string
     {
-        return philosophy()->quote();
+        return philosophy()->quote($lang);
     }
 }

@@ -6,19 +6,17 @@ use Illuminate\Support\Collection;
 
 class Philosophy
 {
-    public static function quote(): string
+    public static function quote(?string $lang = null): string
     {
-        return static::quotes()->random();
+        return static::quotes($lang)->random();
     }
 
-    public static function quotes(): Collection
+    public static function quotes(?string $lang = null): Collection
     {
-        return collect([
-            "Example 1 - Author",
-            "Example 2 - Author",
-            "Example 3 - Author",
-            "Example 4 - Author",
-            "Example 5 - Author"
-        ]);
+        $lang = $lang ?? 'en';
+
+        return new Collection(
+            require __DIR__ . "/../lang/{$lang}.php"
+        );
     }
 }
